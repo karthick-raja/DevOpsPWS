@@ -1,0 +1,5 @@
+{
+	"ImportPath": "github.com/karthick-raja/DevOpsPWS",
+	"GoVersion": "go1.5.1",
+	"Deps": []
+}

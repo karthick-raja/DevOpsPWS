@@ -1,0 +1,8 @@
+---
+applications:
+- name: DevOpsPWS
+  host: devopspws
+  command: DevOpsPWS
+  buildpack: go_buildpack
+  memory: 25M
+  disk: 100M

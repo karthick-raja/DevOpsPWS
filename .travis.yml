@@ -1,0 +1,11 @@
+language: go
+go:
+- 1.5.1
+deploy:
+  provider: cloudfoundry
+  api: https://api.run.pivotal.io
+  username: karthick.x.pattabiraman@verizon.com
+  password:
+    secure: RDY1mnoViqqMqrRS8mQDE4SXyPWxooK9KZeNlPhBVh3TWx+0Npdk0BGVGEzpvPqgnfJjTjhDhvFF2Y7nvybJeHVbJDuUUn10oTr4VBCF9VmwL0HaOkVNY5KwhOZ3ZGsH8XZUqDxc5UuTVFMVtxBV0f2J0tag362bsXJQRcBD77rHI090NZuAB6LljRf8U4FUtm9NC4PJArHBh6SP1hCKNI1KlD18d87qsTpi96gPTZQyFftigVHQeB+caEEmByQADeypJXaA4KhCp22BzSWOyLSR9sQo+qfn6MZyIzjkOTgeGjtCLJafP/SxPdw1i6OXVc4+rIkTRD11QnKBGMwnOzDd2UIGfYNNFyQoxvWV162XrKm46ae/toiDUUMpqTtUWJRB78/NXsw7FzH4LsGUPnv+8Ngn9GYeLhYWskX9jZuNtTS27iFYhI9X/rG4AAXOE0V1Ew3Q03AGW4HkGn6AiTlWkm7B4lsc52KFA/m2d6mXY7b0oT9+eOoTyCgxheEAptWG6fmjAlOWgVFvTz5ULkPY8GBG2cw3wvCRnZ56AWbAAZ7qcwwb3xZs/eIF21fd9e9aBPAgBCeyFUGW5/2fbyJPAlScz0HiSW/gS3tchG5ow4uJ26PZtsC7cx0USxepA3VOPKK2hUv9k2DbopVU8Eddz80gyIQbn1qh1VRVZ4U=
+  organization: karthickworkspace
+  space: development

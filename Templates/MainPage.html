@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+<head>
+	<title>DevOps Demo By Karthick</title>
+</head>
+<body>
+<p><span style="font-size: 24px;"><span style="font-family: arial,helvetica,sans-serif;">File Validation</span></span></p>
+
+<p style="margin-left: 40px;"><span style="font-size: 12px;"><span style="font-family: arial,helvetica,sans-serif;">1. Validate file has header, detail and trailer record.</span></span></p>
+
+<p style="margin-left: 40px;"><span style="font-size: 12px;"><span style="font-family: arial,helvetica,sans-serif;">2. Print the header date</span></span></p>
+
+<p style="margin-left: 40px;"><span style="font-size: 12px;"><span style="font-family: arial,helvetica,sans-serif;">3. Validate trailer record count matches with detail record count</span></span></p>
+
+<p>&nbsp;</p>
+
+<p><span style="font-size: 16px;"><span style="font-family: arial,helvetica,sans-serif;"><em>Enter the file name with full path</em></span></span><strong><span style="font-family: arial,helvetica,sans-serif;"><span style="font-size: 16px;"> </span>
+<input maxlength="100" id="txtValidateFile" size="50" type="text" /></span></strong></p>
+
+<p style="margin-left: 200px;"><strong><span style="font-family: arial,helvetica,sans-serif;">
+<input name="btnValidateFile" size="26" style="width: 128px; height: 23px;" type="button" value="Validate File" onclick=ValidateFile() /></span></strong></p>
+
+<p style="margin-left: 240px;">&nbsp;</p>
+
+<p><span style="font-size: 24px;"><span style="font-family: arial,helvetica,sans-serif;">OS Command Execution</span></span></p>
+
+<p style="margin-left: 40px;"><span style="font-size: 12px;"><span style="font-family: arial,helvetica,sans-serif;">1. Run OS Commands</span></span></p>
+
+<p style="margin-left: 40px;">&nbsp;</p>
+
+<p><em><span style="font-size: 16px;"><span style="font-family: arial,helvetica,sans-serif;">Enter command to execute </span></span></em><input maxlength="100" id="txtOsCommand" size="50" type="text" /></p>
+
+<p style="margin-left: 200px;"><input name="btnCmdExecute" size="25" style="width: 100px; height: 23px;" type="button" value="Execute" onclick=OsCommand() /></p>
+
+<p>&nbsp;</p>
+
+<script type="text/javascript">
+function ValidateFile() {
+location.href = '/ValidateFile?fileName=' + document.getElementById('txtValidateFile').value;
+}
+function OsCommand() {
+location.href = '/OsCommand?cmd=' + document.getElementById('txtOsCommand').value;
+}
+</script>
+</body>
+</html>
